@@ -6,18 +6,32 @@ html::-webkit-scrollbar{
     width: 10px;
 }
 html::-webkit-scrollbar-thumb{
-    background-color: rgb(64, 55, 184);
+    background-color: #4037b8;
     border-radius: 5px;
 }
-html::-webkit-scrollbar-thumb:hover{
-    background-color: #4037b8;
-    transition: 0.8s ease-in;
-    
-}
+
 html::-webkit-scrollbar-track{
     background-color: rgb(211, 211, 211);
     border-radius: 5px;
     width: 1.9vw;
+}
+[class="icon-sun-o"],
+[class="icon-moon-o"]{
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.4); 
+    padding: 8px;
+    cursor: pointer;
+    inset: 10px 0 0 20px;
+    position: relative;
+    border-radius: 50px;
+}
+[class="icon-sun-o"]{
+    visibility: hidden;
+    left: 55px;
+    color: #fff;
+}
+li [class="icon-moon-o"]{
+    padding:8px 9px;
 }
 p{
     font-size: 15px;
@@ -30,31 +44,21 @@ p{
     padding: 0px 14px;
 }
 .navbar-collapse li a{
-    margin: 0 8px;
     font-weight: 500;
 }
 .navbar-collapse li:hover {
     background-color: #4037b8;
     border-radius: 22px;
-    color: #ffffff !important;
 }
-.navbar-collapse li:first-child{
-    border-radius:28px;
-    /* background-color: rgb(17, 17, 17, .8);  */
-    background-color: #4037b8; 
-}
-.navbar-collapse li:first-child:hover{
-    background-color: rgb(17, 17, 17); 
-}
-.navbar-collapse li:first-child a{
-    color: #ffffff !important;
+.navbar-collapse li:last-child:hover {
+    background-color:unset;
 }
 .navbar-collapse li:hover a{
     color: #ffffff !important;
 }
 .navbar{
     padding: 0;
-    height: 60px;
+    height: 50px;
 }   
 .talk li{
     border-radius:28px;
@@ -242,8 +246,8 @@ p{
 }
 .nothing .greyline span{
     position: absolute;
-    width: 60px;
-    left: 26%;
+    width: 50%;
+    left: 25%;
     height: inherit;
     background-color: #4037b8;
     border-radius: 10px;
@@ -257,7 +261,7 @@ p{
 }
 .aboutMe .blockquote .icon-quote-left,
 .aboutMe .blockquote .icon-quote-right{
-    font-size: 18px;
+    font-size: 16px;
     color: #4037b8;
 }
 .aboutMe .blockquote .icon-quote-left{
@@ -266,24 +270,22 @@ p{
 .aboutMe .blockquote .icon-quote-right{
     margin-left: 15px;
 }
-.nothing h3{
-    font-size: 22px;
+.nothing h3,
+#underline h3{
+    font-size: 21px;
+}
+.underline1, .underline2{
+    position: absolute;
+    bottom:-4px; 
+    width:40px; 
+    height: 2px; 
+    background-color:#4037b8;
 }
 .underline1{
-    position: absolute;
-    bottom:0; 
-    left: 10px; 
-    width: 50px; 
-    height: 2px; 
-    background-color:#4037b8;
+    left: 20px; 
 }
-.underline2{
-    position: absolute; 
-    bottom:0; 
-    right: 10px;
-    width: 50px; 
-    height: 2px; 
-    background-color:#4037b8;
+.underline2{ 
+    right: 20px;
 }
 #underline .circle{
     background-color: white;
@@ -292,7 +294,7 @@ p{
     width:10px;
     border-radius: 50%;
     position: absolute;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
 }
 #underline .one{
@@ -304,6 +306,54 @@ p{
 #underline .three{
     margin-left:50px;
 }
+.progress, .progress-bar{
+    border-radius: 10px;
+    height: 8px;
+}
+.progress{
+    margin: 2px 0 10px 0 !important;
+}
+.progress-bar{
+    background-color: #4037b8;
+}
+.languageSkill .span{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+}
+.languageSkill h3,.mh-professional-skills h3{
+    font-size: 18px;
+}
+.house{
+    margin: 15px 0;
+}
+.progress{
+    margin: 10px 0;
+}
+.mh-professional-skills{
+    padding-left: 20px;
+}
+.mh-professional-progress li{
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 25%;
+    text-align: center;
+    margin: 15px 20px;
+}
+.pr-skill-name{
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.socialSkill p{
+    font-size: 24px;
+    color: #4037b8;
+    font-weight: 700;
+}
+
 .resources li a{
     text-decoration: none;
     color: #fff;
@@ -314,36 +364,43 @@ p{
 .resources li a:hover:not(first-child){
     color:#463ccc;
 }
+#sendMessage{
+    margin: 60px 0;
+}
+#sendMessage form .form-control:focus,
+#sendMessage form button:focus{
+    box-shadow: none;
+    border-color: inherit;
+}
 .resources form .form-label{
     display: block;
 }
 .resources form .form-label{
     margin: 0;
 }
-.resources form .form-control{
+#sendMessage form .form-control{
     background-color: rgb(255, 255, 255, .899);
-    height: 70px;
+    height: 45px;
     font-size: 12px;
 }
-.resources form .form-control:focus,
-.resources form button:focus{
-    box-shadow: none;
-    border-color: inherit;
-}
-.resources form button{
-    background-color: #fff;
+#sendMessage form button{
+    background-color: #4037b8;
     font-size: 14px;
-    border-radius: 13px;
+    border-radius:3px;
     font-weight: bold;
+    width: 100px;
 }
-.resources form button:hover{
-    background-color: rgb(255, 255, 255,.9);
+#sendMessage form .textarea{
+    height: 100px;
+}
+#sendMessage form .form-control:focus{
+    border: 2px solid #4037b8;
 }
 .social-footer h4,
 .resources .text-white h4,
 .reachMe h4,
 .resources form h4{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
 }
 .resources li a,
@@ -415,12 +472,14 @@ p{
 #scrollToTop:hover{
     animation: none;
 }
-
-
+.location iframe {
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+}
 
 
 /* for medium sized screens */
-
 
 
 @media screen and (min-width:0px) and  (max-width: 991px){
@@ -436,6 +495,7 @@ p{
         padding: 0;
     }
     .container-fluid .buttonbg{
+        position: relative;
         background-color: #000;
         width: 100%;
         background-color: rgb(24, 24, 24);
@@ -478,16 +538,10 @@ p{
         border: none;
         border-bottom:  1px solid rgb(156, 150, 150,.6);
     }
-    .navbar-collapse li:first-child a{
-        color: #000 !important;
-    }
-    .navbar-collapse li:first-child:hover a{
-        color: #fff !important;
-    }
     .navbar-collapse li:hover{
         background-color: #111;
         border-radius: 0;
-        color: #ffffff !important;
+        color: #fff !important;
     }
     .navbar-collapse li{
         align-items: center;
@@ -499,6 +553,7 @@ p{
         font-size: 14px;
         text-transform: uppercase;
     }
+
     .navbar-light .navbar-nav .nav-link{
         color: #000;
     }
@@ -532,20 +587,54 @@ p{
     }
     .profile {
         padding: 0;
+    }
+    .nothing h3,#underline h3{
+        font-size: 20px;
+    }
+    .underline1, .underline2{
+        bottom:-4px; 
+        width:30px; 
+    }
+    .underline1{
+        left: 30px; 
+    }
+    .underline2{ 
+        right: 30px;
+    }
+    #underline .circle{
+        bottom: -8px;
+    }
+    #underline{
+        font-size: 12px;
+    }
+    .mh-professional-progress li{
+        margin: 15px 30px;
+    }
+    .pr-skill-name{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .languageSkill h3,.mh-professional-skills h3{
+        font-size: 16px;
+    }
+    .socialSkill p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .location iframe {
+        width: 100%;
+        height: 300px;
+        margin: 32px 7px 0 7px;
+    }
+    
+
 }
 
-
-
 /* <--for smaller screens--> */
-
-
 
 @media screen and (max-width:550px) {
     .profile{
         padding: 0;
-    }
-    .nothing h3{
-        font-size: 20px;
     }
     .thingsAboutMe .nothing .greyline span{
         left: 23%
@@ -565,7 +654,7 @@ p{
     #underline .circle{
         height: 8px;
         width:8px;
-        bottom: -3px;
+        bottom: -6px;
     }
     .verticalLine{
         display: none;
@@ -608,27 +697,8 @@ p{
     .reachMe{
         padding: 0;
     }
-    
-    /* .resources form .form-label{
-        margin: 0;
+    .location iframe {
+        width: 100%;
+        height: 300px;
     }
-    .resources form .form-control{
-        height: 50px;
-    }
-    .resources form .form-control:focus,
-    .resources form button:focus
-    {
-        box-shadow: none;
-        border-color: inherit;
-    }
-    .resources form button{
-        background-color: #fff;
-        font-size: 12px;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-     */
-
 }
-
-

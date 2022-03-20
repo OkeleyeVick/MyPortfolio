@@ -4,36 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Bootstrap/html/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Bootstrap/html/portfolio.css">
-    <link rel="stylesheet" href="/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="/Bootstrap/icomoon/style.css">
+    <link rel="stylesheet" href="/Bootstrap/html/progresscircle.css">
     <title>My Portfolio</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <div class="buttonbg">
-            <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
+            <div class="buttonbg ">
+                <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-block d-lg-none" style="position: absolute; top: 10px; right: 15px; padding: 0 15px">
+                    <i class="icon-sun-o" style="padding: 7px; top: 0px; font-size: 18px; border-radius: 50%; cursor: pointer; background: #fff;"></i>
+                    <i class="icon-moon-o" style="padding: 7px 8px; top: 0px; font-size: 18px; border-radius: 50%; cursor: pointer; background: #fff;"></i>
+                </div>
+            </div>
+           
             <div class="collapse navbar-collapse d-lg-flex justify-content-end justify-content-lg-around"  id="navbarNavDropdown">
+               
                 <ul class="navbar-nav justify-content-between">
                     <li class="nav-item mx-lg-3">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link home" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-lg-3">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item mx-lg-3">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item mx-lg-3">
-                        <a class="nav-link" href="#certificates">Certificates</a>
+                        <a class="nav-link" href="#resume">Resume</a>
                     </li>
                     <li class="nav-item mx-lg-3">
-                       <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
+                    <li class="nav-item mx-lg-3">
+                       <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-lg-3 d-none d-lg-block">
+                        <i class="icon-sun-o"></i>
+                        <i class="icon-moon-o" ></i>
+                     </li>
+                    
                 </ul>
             </div>
             <div class="talk" style="margin-right: 30px;">
@@ -43,11 +58,11 @@
             </div>
         </div>
       </nav>
-   <div class="container position-relative  col-11 col-md-12">
-       <div class="progressBar">
+    <div class="container position-relative  col-11 col-md-12">
+        <div class="progressBar">
            <div class="progressReader" style="position: absolute; width: 100%; height: 50%; top: 0;"></div>
-       </div>
-       <div class="row justify-content-center align-items-center">
+         </div>
+        <div class="row justify-content-center align-items-center">
             <div class="d-md-flex align-items-md-center justify-content-md-between">
                 <div class="d-none d-md-block col-md-6 col-lg-auto">
                     <div>
@@ -83,23 +98,24 @@
             </div>
 
        </div>
-       <section id="about">
+       <section>
            <div>
                <h3 class="text-center d-md-none">Welcome to Vickk's Portfolio</h3>
                <h3 class="text-start d-none d-md-block mt-md-1" style="font-size: 22px; color: initial;">MY JOURNEY <span style="color:#4037b8;"> SO FAR</span></h3>
            </div>
             <div class="row">
                 <div>
-                    <p style="text-align: justify;">Hi there, my name is Okeleye Victor Olamide, I am from a family of seven with four beautiful siblings, three beautiful and elegant sisters and one brother. I go by the nickname Justusofnigeria, Justus was a name from my Granny from birth. Welcome to my portfolio, I am very glad you decided to check it out. With a subtle 'let to know' that I am a student of one of the prestigious Unversities in Nigeria, Unversity of Lagos popularly known as UNILAG for short, from the department of Petroleum and Gas Engineering, Chemical and Petroleum Faculty, UNILAG.
+                    <p style="text-align: justify;" class="story">Hi there, my name is Okeleye Victor Olamide, I am from a family of seven with four beautiful siblings, three beautiful and elegant sisters and one brother. I go by the nickname Justusofnigeria, Justus was a name from my Granny from birth. Welcome to my portfolio, I am very glad you decided to check it out. With a subtle 'let to know' that I am a student of one of the prestigious Unversities in Nigeria, Unversity of Lagos popularly known as UNILAG for short, from the department of Petroleum and Gas Engineering, Chemical and Petroleum Faculty, UNILAG.
                     Talking about Programming and Tech plus seeing people code gives me a lot of goosebumps and inspiration. There's this inner joy I get from programming, even though it requires a lot of strategic thinking and continuous researches. The world of Tech as a whole is a really good space for me to flaunt my ability to adapt to new languages and contribute to solving problems, creating method of ease to humanity through Tech.
                     I got interested in Tech space in the year 2020, during the advent of Corona Virus. I got to know about Frontend, Backend, APIs and so on. My actual desire for Web Development came from my curiosity to know how websites work and why they work the way they do, my ideal interest started towards the end of 2021 when I really took charge of my career with HTML & CSS and started hardcoding, then went ahead to advance my knowledge in the basics of the popular Javascript, and its most used framework, my favourite, jQuery.  I am quite familiar with React, one of Javascript's good libraries Learnt a CSS popular framework known as Bootstrap and infact, I used it to create this portfolio your staring at right now. The journey has been fun so far, now I would stop at nothing to be a professional fullstack web developer. Going to the Database and Backend in a few weeks, PHP, Python and SQL for now. Although I have smooth idea about the syntax of Python heard it is rough, it requires technical and strategic thoughts. Well, we'll see about that in a few weeks.
                     </p>
                 </div>
                 <div>
                     <div class="s-image d-block d-md-none justify-content-center col-11 ">
-                        <img src="/images/vic.jpg" alt="Okeleye Victor">
+                        <img src="/Bootstrap/images/vic.jpg" alt="Okeleye Victor">
                     </div>
-                    <div id="underline" class="text-center fs-4 mt-4 mt-lg-0 mb-md-3 mb-lg-0 mt-md-3" style="font-weight: 600; position: relative; width: 200px; margin: 0 auto;align-items: center; padding-bottom: 1  px;">PERSONAL INFO
+                    <div id="underline" class="text-center fs-4 mt-4 mt-lg-0 mb-md-3 mb-lg-0 mt-md-3 info" style="font-weight: 600; position: relative; width: 200px; margin: 0 auto;align-items: center; padding-bottom: 1  px;">
+                       <h3>PERSONAL INFO</h3>
                         <div class="underline1" ></div>
                         <div style="background-color: #4037b8;left: 35%; bottom: 0; position: absolute;" >
                             <span class="circle one"></span>
@@ -108,7 +124,7 @@
                         </div>
                         <div class="underline2"></div>
                     </div>
-                    <div class="d-md-flex d-block justify-content-lg-evenly justify-content-md-between">
+                    <div class="d-md-flex d-block justify-content-lg-evenly justify-content-md-between info">
                         <div class="profile d-block align-items-start justify-content-lg-start col-md-5 col-lg-auto my-0 my-md-3">
                             <li><span><i class="icon-account_circle"></i>Fullname:</span><span></span></li>
                             <li><span><i class="icon-calendar"></i>Birthday:</span><span></span></li>
@@ -117,7 +133,7 @@
                             <li><span><i class="icon-location_city"></i>Nationality:</span><span></span></li>
                             <li><span><i class="icon-my_location"></i>Address:</span><span></span></li>
                         </div>
-                        <div class="profile align-items-start col-md-5 col-lg-auto my-0 my-md-3 d-none d-md-block">
+                        <div class="profile align-items-start col-md-5 col-lg-auto my-0 my-md-3 d-none d-md-block info">
                             <li><span><i class="icon-location_city"></i>City:</span><span></span></li>
                             <li><span><i class="icon-certificate"></i>Degree:</span><span></span></li>
                             <li><span><i class="icon-envelope-o"></i>Email:</span><span></span></li>
@@ -129,12 +145,12 @@
                 </div>
             </div>
        </section>
-       <section id="quotes">
+       <section id="about">
         <div class="row thingsAboutMe col-12 justify-content-center">
             <div class="nothing" style="width:auto;">
                 <h3 class="text-center my-0">ABOUT</h3>
                 <div class="greyline">
-                    <span class="darkUnderline" style="width: 40px; left: 30%;"></span>
+                    <span class="darkUnderline"></span>
                 </div>
             </div>
             <div class="aboutMe d-block d-md-flex justify-content-between align-items-md-center my-2 my-md-5">
@@ -166,31 +182,130 @@
             </div>
          </div>
        </section>
-       <section id="certificates">
+       <section id="skills">
             <div class="row thingsAboutMe col-12 justify-content-center">
                 <div class="nothing" style="width:auto; margin: 30px 0;">
                     <h3 class="text-center my-0">SKILLS</h3>
                     <div class="greyline" >
-                        <span class="darkUnderline" style="width: 60px; left:30%;"></span>
+                        <span class="darkUnderline"></span>
                     </div>
                 </div>
-                <div class="p-0 text-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae expedita aut, eaque ea maxime quasi, dolore quisquam recusandae distinctio amet quo possimus harum suscipit voluptates corporis sequi? Facilis, 
-                    Nemo quo similique reiciendis, laboriosam ullam eius repudiandae laborum, illum nulla rerum veniam libero sint animi! Itaque quam consequatur optio placeat ab. Repudiandae, unde magni excepturi quisquam cum officiis error?
-                    Quas recusandae dolores consectetur! Saepe, veniam illum commodi, explicabo quibusdam aliquam possimus provident perferendis culpa error nobis quae molestiae minus sit eligendi quia impedit incidunt. Ut ex earum molestiae ipsum.
-                    Quisquam facere tempore doloribus at debitis. Ipsum, voluptatum, laborum explicabo maiores tempore qui quidem mollitia doloremque, provident facere dolore maxime suscipit. Dignissimos tempora dicta nisi quod aperiam commodi assumenda amet?
-                    Aliquid, adipisci commodi! Quas adipisci culpa nulla explicabo officia. Expedita, veritatis. Consectetur neque soluta quasi corrupti suscipit, itaque asperiores ex aspernatur cum ratione quidem alias et tempore earum sint perspiciatis?<br>
-                    Common misunderstood is the role of individuals and the Church. Let us take a step back to listen to some views addressing this issue
-                    </p>
+                <div class="skills d-block d-md-inline-flex justify-content-around">
+                    <div class="languageSkill col-12 col-md-5 col-lg-6 me-lg-2">
+                        <div class="text-md-start text-center"><h3>Technical Skills</h3></div>
+                        <div class="house">
+                            <div class="span">
+                                <span>HTML</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="house">
+                            <div class="span">
+                                <span>CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="house">
+                            <div class="span">
+                                <span>Jquery</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="house">
+                            <div class="span">
+                                <span>Bootstrap</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="house">
+                            <div class="span">
+                                <span>Python</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="house">
+                            <div class="span">
+                                <span>React</span>
+                                <span>10%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="house">
+                            <div class="span">
+                                <span>PHP</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                         <div class="house">
+                            <div class="span">
+                                <span>Javascript</span>
+                                <span>35%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="socialSkill col-12 col-md-5 col-lg-6 ms-lg-2">
+                        <div class="mh-professional-skills text-center">
+                            <h3 class="text-md-start text-center" style="padding-left: 30px;">Professional Skills</h3>
+                            <ul class="list-unstyled mh-professional-progress ">
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="70"></div>
+                                    <div class="pr-skill-name">Communication</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                                    <div class="pr-skill-name">Team Work</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="85"></div>
+                                    <div class="pr-skill-name">Project Management</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="78"></div>
+                                    <div class="pr-skill-name">Creativity</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skill-name">Obedience</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="85"></div>
+                                    <div class="pr-skill-name">Hardwork</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-             </div>
         </section>
-        <section id="contact">
+        <section>
             <div class="row col-12 resume justify-content-center">
                 <div class="nothing" style="width:auto; margin: 30px 0;">
                     <h3 class="text-center my-0">CERITIFCATES</h3>
-                    <div class="greyline" >
-                        <span class="darkUnderline" style="width: 40px; left:30%;"></span>
+                    <div class="greyline">
+                        <span class="darkUnderline"></span>
                     </div>
                 </div>
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -201,13 +316,13 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="/Bootstrap/images/CSS3 COURSERA.png" class="d-block w-50 m-auto" alt="...">
+                        <img src="/Bootstrap/images/HTML COURSERA.png" class="d-block w-50 m-auto" alt="...">
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
                         <img src="/Bootstrap/images/RESPONSIVE HTML CSS & JS.png" class="d-block w-50 m-auto" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="/Bootstrap/images/HTML COURSERA.png" class="d-block w-50 m-auto" alt="...">
+                        <img src="/Bootstrap/images/CSS3 COURSERA.png" class="d-block w-50 m-auto" alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -220,11 +335,11 @@
             </div>
         </section>  
         <section>
-            <div class="row col-12 resume justify-content-center">
-                <div class="nothing my-3 mt-md-5 mb-md-3" style="width:auto;">
+            <div class="row col-12 resume justify-content-center resume">
+                <div class="nothing my-3 mt-md-5 mb-md-3" style="width:auto;" id="resume">
                     <h3 class="text-center my-0">RESUME</h3>
-                    <div class="greyline" >
-                        <span class="darkUnderline" style="width: 40px; left:30%;"></span>
+                    <div class="greyline">
+                        <span class="darkUnderline"></span>
                     </div>
                 </div>
                 <div class="d-block d-md-flex justify-content-around">
@@ -300,96 +415,38 @@
                     </div>
                     </div>
                 </div>
-            </div>
-        </section> 
-        <section>
-            <div class="row col-12 resume justify-content-center" id="Contact">
-                <div class="contactForm mt-4 mt-md-0 pt-3 pt-md-0  text-center text-white">
-                   <form>
-                       <div class="">
-                           <div>
-                               <h4 class="mb-2">Leave a message</h4>
-                           </div>
-                           <div>
-                               <label for="exampleFormControlTextarea1" class="form-label"></label>
-                               <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Send Victor a message..."></textarea>
-                               <button type="submit" class="btn mt-1">Send</button>
-                           </div>
-                       </div>
-                   </form>
-                   
-                   <form>
-                       <div class="">
-                           <div>
-                               <h4 class="mb-2">Leave a message</h4>
-                           </div>
-                           <div>
-                               <label for="exampleFormControlTextarea1" class="form-label"></label>
-                               <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Send Victor a message..."></textarea>
-                               <button type="submit" class="btn mt-1">Send</button>
-                           </div>
-                       </div>
-                   </form>
-                   
-                   <form>
-                       <div class="">
-                           <div>
-                               <h4 class="mb-2">Leave a message</h4>
-                           </div>
-                           <div>
-                               <label for="exampleFormControlTextarea1" class="form-label"></label>
-                               <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Send Victor a message..."></textarea>
-                               <button type="submit" class="btn mt-1">Send</button>
-                           </div>
-                       </div>
-                   </form>
-                   
-                   <form>
-                       <div class="">
-                           <div>
-                               <h4 class="mb-2">Leave a message</h4>
-                           </div>
-                           <div>
-                               <label for="exampleFormControlTextarea1" class="form-label"></label>
-                               <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Send Victor a message..."></textarea>
-                               <button type="submit" class="btn mt-1">Send</button>
-                           </div>
-                       </div>
-                   </form>
-                   
-                   <form>
-                       <div class="">
-                           <div>
-                               <h4 class="mb-2">Leave a message</h4>
-                           </div>
-                           <div>
-                               <label for="exampleFormControlTextarea1" class="form-label"></label>
-                               <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Send Victor a message..."></textarea>
-                               <button type="submit" class="btn mt-1">Send</button>
-                           </div>
-                       </div>
-                   </form>
-                   
-                   <form>
-                       <div class="">
-                           <div>
-                               <h4 class="mb-2">Leave a message</h4>
-                           </div>
-                           <div>
-                               <label for="exampleFormControlTextarea1" class="form-label"></label>
-                               <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Send Victor a message..."></textarea>
-                               <button type="submit" class="btn mt-1">Send</button>
-                           </div>
-                       </div>
-
-                   </form>
-                   
-               </div>
-        </section>
-   </div>
+                <section id="sendMessage">
+                    <div class="row col-12 d-flex justify-content-center align-items-center">
+                        <form class="contactForm col-lg-6">
+                            <div class="d-block d-md-flex justify-content-between my-3 col-lg-10">
+                                <div class="col-md-5 mb-1 mb-lg-auto">
+                                    <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+                                </div>
+                                <div class="col-md-5 mt-3 mt-md-auto ">
+                                    <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-10 my-1">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+                            </div>
+                            <div class="col-lg-10 mt-4">
+                                <textarea class="form-control textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Send Victor a message..."></textarea>
+                                <button type="submit" class="btn text-center text-white mt-2">Send</button>
+                            </div>
+                        </form>
+                        <div class="location col-12 col-lg-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.845678167522!2d3.3788333498659613!3d6.541163624750421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d0a3a8f02e3%3A0x8aad931ece867602!2s6%20Oshipitan%20St%2C%20Bariga%20102216%2C%20Lagos!5e0!3m2!1sen!2sng!4v1647768654491!5m2!1sen!2sng"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section> 
+        
+ 
    <div class="container p-0 m-0" style="max-width: initial; background-color: rgba(16,16,16,255)">
-
-    <section>
+    <section id="Contact">
         <div style="margin: 0 auto;height: auto; padding: 40px 5px 0px 5px;" class="row col-12 justify-content-evenly align-items-center justify-content-md-around d-flex">
             
             <div class="social-footer text-start d-block col-10 p-0 col-md-3 text-white mb-3 mb-md-0 mb-lg-4" style="text-align: justify;">
@@ -397,10 +454,9 @@
                     <h4>About Vickk</h4>
                     <span class="" style="width: 30px;  bottom:-5px; left:0%; background-color: #4037b8; height: 2px; position: absolute;"></span>
                 </div>
-                <div class=" ">
+                <div>
                     <p class="w-75 text-start mb-md-0" style="font: 12px;">Nothing really much to see here, just a bunch of jargons and blah blah really much to see here, just a bunch of jargons and blah blahreally much to see here, just a bunch of jargons and blah blah</p>
                 </div>
-
                 <div class="social-apps list-unstyled">
                     <li><a href=""><i class="icon-twitter"></i></a></li>
                     <li><a href=""><i class="icon-github"></i></a></li>
@@ -410,23 +466,23 @@
                     <li><a href=""><i class="icon-whatsapp"></i></a></li>
                 </div>
             </div>
-
             <div class="resources col-10 col-md-3 mt-3 mb-3 my-md-0 text-start list-unstyled ">
                 <div class="text-white position-relative mb-3 mb-md-4">
                     <h4>Quick Links</h4>
                     <span class="" style="width: 30px; bottom:-5px; left:0%; background-color: #4037b8; height: 2px; position: absolute;"></span>
                 </div>
-                <li><a href="">About</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Help & Support</a></li>
-                <li><a href="">Terms & Condition</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Contact</a></li>
             </div>
 
             <div class="reachMe col-10 col-md-3 mt-1 mb-3 mt-md-0" style="color: white;">
                 <div class="text-start position-relative mb-3 mb-md-4">
-                    <h4 class="d-block">Contact Me</h4>                        <span style="width: 30px;  bottom:-5px; left:0%; background-color: #4037b8; height: 2px; position: absolute;"></span>
+                    <h4 class="d-block">Contact Me</h4>
+                    <span style="width: 30px;  bottom:-5px; left:0%; background-color: #4037b8; height: 2px; position: absolute;"></span>
                 </div>
                 <div class="text-start d-flex align-items-center">
                     <i class="icon-map-marker "></i>
@@ -438,7 +494,7 @@
                     </div>
                     <div>
                         <span class="d-block">+2349073734025</span>
-                        <span class="d-block">+2349073734025</span>
+                        <span class="d-block">+2349130586120</span>
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
@@ -451,7 +507,6 @@
             <i class="icon-angle-up d-block"></i>
             <i class="icon-angle-up d-block mt-2"></i>
             </div>
-           <!-- <div id="scrollToTop mt-3"><i class=" icon-expand_less"></i></div> -->
     </section>
     <section>
         <div class="copyright d-flex align-items-baseline justify-content-center pb-1 pb-md-0 px-0">
@@ -460,10 +515,11 @@
         </div>
     </section>
    </div>
-
-
-   <script src="/Bootstrap/js/jquery.min.js"></script>
+  
+    <script src="/Bootstrap/js/jquery.min.js"></script>
+    <script src="/Bootstrap/circleeee/circle-progress.js"></script>
     <script src="/Bootstrap/js/bootstrap.min.js"></script>
     <script src="/Bootstrap/html/portfolio.js"></script>
+   
 </body>
 </html>
